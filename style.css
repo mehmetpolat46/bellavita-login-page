@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background:url(img/arkaplan.gif) no-repeat center center fixed ;
+    background-size: cover;
+    
+}
+.container{
+    background: #fff;
+    max-width: 400px;
+    max-height: 600px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: relative;
+    
+    
+}
+.container .logo img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 70%;
+    top: 5px;
+    border-radius: 50%;
+}
+.container form .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px 0 10px 0;
+    font-family: 'Indie Flower', cursive;
+    color: green;
+
+}
+.title span {
+    border-bottom: 2px solid blue;
+    display: inline-block;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+
+}
+.container form .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+
+}
+.container form .underline::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    right: 0;
+
+}
+.container form .underline::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: o;
+    background: rgb(255, 1, 1);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .3s ease;
+}
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.container form .button{
+    margin: 40px 0 20px 0;
+}
+.container form .input-box input[type="submit"]{
+    font-size: 17px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(219, 65, 65);
+    transition: all 0.3s ease;
+}
+.container form .input-box input[type="submit"]:hover{
+    color: red;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+.container .text{
+    font-size: 14px;
+    text-align: center;
+}
+
+.container .github a,
+.container .twitter a,
+.container .facebook a{
+
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 5px;
+
+
+}
+.container .github a{
+    background: #24292e;
+    margin: 20px 0 15px 0;
+}
+.container .github a:hover{
+    background-color: #57616b;
+
+}
+.container .twitter a{
+    background: #00acee;
+    margin: 20px 0 15px 0;
+
+}
+.container .twitter a:hover{
+    background-color:#8fbcce ;
+}
+.container .facebook a{
+    background: #3b5998;
+    margin: 20px 0 15px 0;
+
+}
+.container .facebook a:hover{
+    background-color: #527ad1;
+}
+
+
+.container .github i,
+.container .twitter i{
+
+    font-size: 22px;
+    padding-right: 70px;
+}
+.container .facebook i{
+    font-size: 22px;
+    padding-right: 60px;
+
+}
+
+
+
